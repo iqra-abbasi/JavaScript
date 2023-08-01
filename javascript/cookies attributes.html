@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>attributes cookies</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>cokkies attributes</h1>");
+            document.writeln("<h1>expire attributes</h1>");
+            function setcokkies()
+            {
+                document.cookie="name=iqra; expires=Wed, 7 Sep 2022  7:27:00 UTC";
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+
+
+
+
+
+
+
+
+            <script>
+            
+            document.writeln("<h1>max age attributes</h1>");
+            function setcokkies()
+            {
+                document.cookie="name=abbasi; max-age="+(50)+";";
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+
+
+
+
+            <script>
+            
+            document.writeln("<h1>path attributes</h1>");
+            function setcokkies()
+            {
+                document.cookie="name=hello; path=/.";
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+    </body>
+</html>

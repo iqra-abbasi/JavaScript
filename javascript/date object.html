@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>date object</title>
+    </head>
+
+    <body>
+        <script>
+           document.writeln("<h1>first method date()</h1>");
+            var d1=new Date();
+            document.writeln("it will show full date and time: "+d1);
+            document.writeln("<br>");
+
+            document.writeln("<h1>second method date(year,month,day,hours,min,sec,milisec</h1>");
+            var d2=new Date(2022,7,0,6,10,5);
+            document.writeln("it wll show that things which we pass it:"+d2);
+            document.writeln("<br>");
+
+
+document.writeln("<h1>third method date string()</h1>");            
+var d3=new Date("august,29,2022,6:15:5");
+document.writeln("date in string is:"+d3);     
+document.writeln("<br>");
+
+
+document.writeln("<h1>date in mili seconds</h1>");
+document.writeln("date according to change with values</h1>");
+
+var d4=new Date(0);
+document.writeln("date is:"+d4);
+
+        </script>
+    </body>
+</html>

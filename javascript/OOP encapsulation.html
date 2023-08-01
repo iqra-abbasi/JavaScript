@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> OOP encapsulation</title>
+        </head>
+
+        <body>
+            <script>
+                document.writeln("<h1>OOP encapsulation</h1>");
+                class Student
+                {
+                    constructor()
+                   {
+                     var name;
+                    var id;
+                    var marks;
+                }
+                getName()
+                {
+                    return this.name;
+                    
+
+                }
+                setName(name)
+                {
+                    this.name=name;
+                }
+
+                getId()
+                {
+                    return this.id;
+                }
+                setId(id)
+                {
+                    this.id=id;
+                }
+
+                getMarks()
+                {
+                    return this.marks;
+                }
+                setMarks(marks)
+                {
+                    this.marks=marks;
+                }
+            }
+
+            var obj1=new Student();
+            obj1.setName("iqra");
+            document.writeln("name is:"+obj1.getName());
+            document.writeln("<br>");
+
+            obj1.setId(11);
+            document.writeln("id is:"+obj1.getId());
+            document.writeln("<br>");
+
+            obj1.setMarks(200);
+            document.writeln("marks are:"+obj1.getMarks());
+            document.writeln("<br>");
+
+
+            var obj2=new Student();
+            obj2.setName("abbasi");
+            document.writeln("name is:"+obj2.getName());
+            document.writeln("<br>");
+
+            obj2.setId(22);
+            document.writeln("id is:"+obj2.getId());
+            document.writeln("<br>");
+
+            obj2.setMarks(300);
+            document.writeln("marks are:"+obj2.getMarks());
+                </script>
+        </body>
+</html>

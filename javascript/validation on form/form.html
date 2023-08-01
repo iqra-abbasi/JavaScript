@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        html form
+    </title>
+    <style>
+      
+    </style>
+
+    <script>
+        function blure()
+        {
+            document.body.style.background="green";
+        }
+
+        function changed()
+        {
+            document.body.style.background="red";
+        }
+
+        function focused()
+        {
+            document.body.style.background="pink";
+        }
+
+        
+        function inputed()
+        {
+            document.body.style.background="gray";
+        }
+
+        function wrong()
+        {
+            document.body.style.background="blue";
+        }
+
+        function reseted()
+        {
+            document.body.style.border="5px solid brown";
+        }
+      
+
+
+
+
+        
+
+
+
+
+                        function validateform()
+                        {
+                            var t3=document.myform.phonenumber.value;
+                
+
+                if(isNaN(t3))
+                {
+                    
+                    document.getElementById("error").innerHTML="please enter correct tele phone number:"
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                        }
+
+
+
+
+                        
+                        function validateform()
+                        {
+                            var t4=document.myform.secondname.value;
+                
+
+                if(t4==null || t4=="")
+                {
+                    
+                    document.getElementById("second").innerText="please enter second name here:"
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                        }
+
+
+
+
+                               
+                        function validateform()
+                        {
+                            var t5=document.myform.firstname.value;
+                
+
+                if(t5==null || t5=="")
+                {
+                    
+                    document.getElementById("first").innerText="please enter first name here:"
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                        }
+
+
+
+
+                                      
+                        function validateform()
+                        {
+                            var t6=document.myform.password.value;
+                
+
+                if(t6.length<6)
+                {
+                    
+                    document.getElementById("pass").innerText="please enter at least 6 digits:"
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                        }
+
+                
+
+        </Script>
+</head>
+
+<body style="background-color: lightcoral;">
+    
+
+
+<fieldset>
+    <legend><b>registration  FORM<b></legend>
+
+    <form action="submit.html" method="post" target="_self" enctype="" onreset="reseted()" name="myform" onsubmit="return validateform()">
+<center>
+        <img src="girl.JPEG" style="border-radius: 50%;" width="200px" height="200px">
+</center>
+
+<label>first name: </label>
+<input type="text" name="firstname"
+placeholder="enter your first name:" autocomplete="off"  autofocus onblur="blure()">
+<span id="first"></span>
+<br>
+<br>
+<label>second name:</label>
+<input type="text" name="secondname"
+placeholder="enter your second name" autocomplete="off" onchange="changed()">
+<span id="second"></span>
+<br>
+<br>
+<label>password:</label>
+<input type="password" name="password"
+placeholder="enter 5 digits"autocomplete="off"  size="5" onfocus="focused()">
+<span id="pass"></span>
+<br>
+<br>
+
+<label>email</label>
+<input type="email"name="email"
+placeholder="abc@mail.com"autocomplete="off" required oninput="inputed()">
+<br>
+<br>
+<label>gender</label>
+<input type="radio"name="gender" value="male">male
+
+<input type="radio"name="gender"value="female">female
+
+<input type="radio"name="gender"value="other">other
+<br>
+<br>
+
+<label>interest</label>
+<input type="checkbox" name="programming"value="c++">c++
+
+<input type="checkbox"name="programming"value="java">java
+
+<input type="checkbox"name="programming"value="dsa">dsa
+<br>
+<br>
+<label>select degree</label>
+<select>
+    <option >BSCS</option>
+    <option>BSIT</option>
+    <option>BSSE</option>
+</select>
+<br>
+<br>
+<label>attach file here</label>
+<input type="file"name="value">
+<br>
+<br>
+<label>color</label>
+<input type="color"name="color">
+<br>
+<br>
+<label>select date</label>
+<input type="date"name="date">
+<br>
+<br>
+<label>select date and time</label>
+<input type="datetime-local"name="datetime-local">
+<br>
+<br>
+<label>select month</label>
+<input type="month"name="month">
+<br>
+<br>
+
+<label>phonenumber</label>
+<input type="text"name="phonenumber"
+placeholder="enter phone number here" autocomplete="off" required>
+<span id="error">
+
+</span>
+<br>
+<br>
+
+<label>URL</label>
+<input type="url"name="url"
+placeholder="https://learnver.com" oninvalid="wrong()">
+<br>
+<br>
+<label>select week</label>
+<input type="week" name="week">
+<br>
+<br>
+<label>search here</label>
+<input type="search"name="search">
+<br>
+<br>
+<label>enter telephonenumber</label>
+<input type="tel" name="telephonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+placeholder="088-234-4448" disabled>
+<br>
+<br>
+
+
+
+
+
+<label>address</label>
+<textarea></textarea>
+<br>
+<br>
+<input type="button"value="button">
+<br>
+<br>
+<input type="reset"value="reset">
+<br>
+<br>
+
+<input type="submit"value="submit">
+<br>
+<br>
+
+<!--here we take a type image as a submit the form
+<input type="image" src="girl.JPEG" width="100px" height="50px" alt="submit">-->
+
+
+    </form>
+</fieldset>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>validation on email!</title>
+        
+    </head>
+    <body>
+        <script>
+            
+            function validateform()
+            {
+                var email=document.myform.mail.value;
+                var atposition=email.indexOf('@');
+                var dotposition=email.indexOf('.');
+                
+
+                if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+                {
+                    
+                    alert("email is not correct:")
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                          }
+            </script>
+
+<form name="myform" method="post" onsubmit="return validateform()">
+
+email: <input type="text" name="mail">
+
+<br>
+<br>
+
+
+<input type="submit" value="submit">
+<br>
+</form>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document object model!</title>
+    </head>
+
+    <body>
+        <script>
+            document.writeln("<h1>through document!</h1>");
+            function message1()
+            {
+                var t1=document.form1.username.value;
+                alert("you enter name:"+t1);
+
+                
+                var t2=document.form1.email.value;
+                alert("you enter email::"+t2);
+            }
+
+        </script>
+        <form name="form1">
+        enter your name:
+        <input type="text" name="username">
+        <br>
+        <br>
+        enter your email:
+        <input type="text" name="email">
+        <br>
+        <br>
+        <input type="button" value="through document" onclick="message1()">
+        </form>
+
+
+
+
+
+
+        <script>
+            document.writeln("<h1>get element by id()</h1>");
+            function message2()
+            {
+                var t2=document.getElementById("showname").value;
+                alert("you enter name through id:"+t2);
+            }
+
+        </script>
+
+
+enter your name:
+<input type="text" name="user" id="showname">
+<br>
+<input type="button" value="id" onclick="message2()">
+<br>
+
+
+
+
+<h1>get element by class name()</h1>
+<div class="throughclass">
+    this is with class name1:!!
+</div>
+
+<div class="throughclass">
+    this is with class name2:!!
+</div>
+
+<script>
+   
+
+    var t3=document.getElementsByClassName('throughclass');
+  //  alert(t3[0].innerText);
+   //alert(t3[1].innerText);
+   //OR
+   for(value of t3)
+   {
+       alert(value.innerText);
+   }
+</script>
+
+
+
+
+
+<script>
+    document.writeln("<h1>get element by name</h1>");
+
+    function message5()
+    {
+        var t6=document.getElementsByName("gender");
+        alert("lenght is:"+ t6.length);
+        alert("values are:"+ t6[0].defaultValue);
+        console.log(t6);
+    }
+
+</script>
+
+<form>
+   male:
+    <input type="radio" name="gender" value="male">
+    <br>
+    female:
+    <input type="radio" name="=gender" value="female" >
+    <br>
+    <input type="button" value="click!" onclick="message5()">
+</form>
+
+    </body>
+</html>

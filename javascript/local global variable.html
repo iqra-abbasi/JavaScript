@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1> local variable in javascript</h1>
+        <script>
+           function local()
+           {
+               var a=20;
+               document.write("this is about local variabl  :"+a);
+               document.write("<br>");
+           }
+           local();//in local it is necessary to call function outside otherwise it will not print value
+           document.write(a);//it was a local v so it will not be access outside the scope
+</script>
+
+
+<h1> global variable in javascript</h1>
+
+<script>
+     var b="hi!!";//globally declare
+
+   function global()
+   {
+      
+       document.write(b);
+       document.write("<br>");
+   }
+  global();
+
+
+   document.write(b);//it was a global v so it will  be access outside the scope
+</script>
+
+
+
+<h1> global variable through window in javascript</h1>
+
+<script>
+     window.x="window !!";  //globally declare
+window.y="me!!";
+   function global()
+   {
+      
+       document.write(window.x);
+       document.write("<br>");
+   }
+  global();
+
+  function me()
+   {
+      
+       alert(window.y);
+       document.write("<br>");
+   }
+  me();
+   //document.write(b);//it was a global v so it will  be access outside the scope
+</script>
+    </body>
+</html>

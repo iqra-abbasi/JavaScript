@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cookies delete</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>cokkies delete</h1>");
+        
+            function setcokkies()
+            {
+          document.cookie = "name=iqraa; max-age=0";
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+
+
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+
+
+
+
+            <script>
+            document.writeln("<h1>cokkies delete</h1>");
+        
+            function setcokkies()
+            {
+          document.cookie = "name=iqraa; expires=Wed, 7 Sep 2022  7:51:00 UTC";
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+
+
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

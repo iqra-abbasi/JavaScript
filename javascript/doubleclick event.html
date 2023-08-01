@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>on double click events</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>ondbclick through html</h1>");
+            function click1()
+            {
+                document.body.style.background="yellow";
+
+            }
+            </script>
+<button  ondblclick="click1()">db through html</button>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<h1>dbclick through js</h1>
+<button id="my1">dbclick js</button>
+<p id="me"></p>
+<script>
+    document.getElementById("my1").ondblclick=function()
+    {
+        document.getElementById("me").innerHTML="this is through js";
+        document.body.style.background="green";
+    }
+</script>
+
+            
+
+
+
+
+
+<h1 id="my2">dbclick through addeventlistener</h1>
+<p id="my3"></p>
+<script>
+    document.getElementById("my2").addEventListener("dblclick",change22);
+    function change22()
+    {
+        document.getElementById("my3").innerHTML="hy this is db through add event listener";
+    document.body.style.background="red";
+    }
+</script>
+    
+        </body>
+</html>

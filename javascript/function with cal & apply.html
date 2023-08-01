@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function with call and apply </title>
+    </head>
+
+    <body>
+
+        <script>
+            document.writeln("<h1>function with call</h1>");
+            function emp(id,name)
+            {
+                this.id=id;
+                this.name=name;
+            }
+
+            function per(id,name)
+            {
+                emp.call(this,id ,name);
+            }
+            document.writeln(new per(1,"iqra").id);
+            document.writeln("<br>");
+            document.writeln(new per(1,"iqra").name);
+            document.writeln("<br>");
+
+
+            function sal(name,id)
+            {
+                this.name=name;
+                this.id=id;
+               // sal.call(this,name,id);
+            }
+            document.writeln(new sal("abbasi",2).name);
+
+
+
+
+            document.writeln("<h1>apply()</h1>");
+            var arr=[6,9,4,3,2];
+            var max=Math.max.apply(this,arr);
+            var min=Math.min.apply(this,arr);
+            document.writeln("<h1>max value is</h1>");
+            document.writeln(max);
+
+            document.writeln("<h1>min value is</h1>");
+            document.writeln(min);
+            document.writeln("<br>");
+
+
+document.writeln("<h1>concatenate both</h1>");
+
+            var x=[1,2,3];
+            var y=[4,5,6];
+            document.writeln("x values are"+ x);
+            document.writeln("<br>");
+
+            document.writeln("y values are!"+y);
+            document.write("<br>");
+            document.writeln("concatenate values are!");
+            x.push.apply(x,y);
+            document.writeln(x);
+
+            </script>
+</body>
+</html>

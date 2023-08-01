@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js classes</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>js classes</h1>");
+            document.writeln("<h1>first method class declaration</h1>");
+
+          class Employee
+            {
+            constructor(name,id)
+                {
+                    this.name=name;
+                    this.id=id;
+                }
+                details()
+                {
+                    document.writeln(this.name+"        " +this.id);
+                }}
+
+                var obj1=new Employee("iqra",1);
+                obj1.details();
+                document.writeln("<br>");
+                document.writeln("<br>");
+
+
+                var obj2=new Employee("abbasi",2);
+                obj2.details();
+            
+            </script>
+    </body>
+</html>

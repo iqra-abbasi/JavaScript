@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function </title>
+    </head>
+
+    <body>
+
+        <script>
+            document.writeln("<h1>function with object</h1>");
+            document.writeln("<h1>add</h1>")
+
+            var add=new Function ("n1","n2","return n1+n2");
+            document.writeln(add(2,3));
+            document.write("<br>");
+            document.writeln(add(10,10));
+
+
+            document.writeln("<h1>power</h1>");
+
+            var power=new Function("num1","num2","return Math.pow (num1,num2)");
+            document.writeln(power(2,3));
+            </script>
+</body>
+</html>

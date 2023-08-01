@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inherentence</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>built in class</h1>");
+
+            class Moment extends Date{
+                constructor()
+                {
+                    super();
+                }
+            }
+            var obj1=new Moment();
+            document.writeln("today date is:"+obj1.getDate()+"-"+obj1.getDay()+"-"+obj1.getMonth()+"-"+obj1.getFullYear());
+            </script>
+
+
+
+
+
+            <h1>custome class</h1>
+            <script>
+                class Bike
+                {
+                    constructor()
+                    {
+                        this.company="honda";
+                    }
+
+                }
+
+                class Vehicle extends Bike
+                {
+                    constructor(name,price)
+                    {
+                        super();
+                        this.name=name;
+                        this.price=price;
+                    }
+                }
+                var obj1=new Vehicle("shine",4000);
+                document.writeln("bike name:"+obj1.name);
+                document.writeln("<br>");
+                document.writeln("bike price is:"+obj1.price);
+                document.writeln("<br>");
+                document.writeln("company name is:"+obj1.company);
+                document.write("<br>");
+
+                var obj2=new Vehicle("heavy",5000);
+                document.writeln("bike name is:"+obj2.name);
+                document.writeln("<br>");
+                document.writeln("bike price is:"+obj2.price);
+            </script>
+    </body>
+</html>

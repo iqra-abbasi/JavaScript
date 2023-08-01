@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>validation on phone number!</title>
+    </head>
+    <body>
+        <script>
+            
+            function validateform()
+            {
+                var t1=document.myform.telephonenumber.value;
+                
+
+                if(isNaN(t1))
+                {
+                    
+                    document.getElementById("error").innerHTML="please enter correct tele phone number:"
+                    return false;
+                }
+                else 
+                {
+                    
+                    return true;
+                }
+                          }
+            </script>
+
+<form name="myform" method="post" onsubmit="return validateform()">
+
+phone number: <input type="text" name="telephonenumber">
+
+<span id="error"></span>
+<br>
+<br>
+
+
+<input type="submit" value="submit">
+<br>
+</form>
+    </body>
+</html

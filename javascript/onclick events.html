@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>on click events</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>onclick through html</h1>");
+            function clickme()
+            {
+                document.body.style.background="yellow";
+            }
+
+            </script>
+            <button onclick="clickme()">onclick html</button>
+            <br>
+            <br>
+
+
+
+
+
+
+
+<h1>onclick through js</h1>
+
+            <button id="my1">onclick js</button>
+            <script>
+                
+               document.getElementById("my1").onclick= function ()
+                {
+                    document.body.style.background="red";
+                }
+    
+                </script>
+             
+    
+
+
+             
+<h1 id="my2">onclick through addeventlistener</h1>
+<p id="my3"></p>
+
+<script>
+    document.getElementById("my2").addEventListener("click",change);
+    function change()
+    {
+        document.getElementById("my3").innerHTML="this is onclick through add event listener!";
+    }
+</script>
+
+
+    </body>
+</html>

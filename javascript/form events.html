@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events in js</title>
+    </head>
+    <body>
+
+      
+
+        <script>
+            document.writeln("<h1>form event</h1>");
+
+            document.writeln("<h1>onfocus event</h1>");
+            function changefocus()
+            {
+                document.body.style.background='yellow';
+            }
+
+            </script>
+
+<input type="text" name="name" onfocus="changefocus()">
+
+       
+
+
+
+        <script>
+            document.writeln("<h1>form event</h1>");
+
+            document.writeln("<h1>onblur event</h1>");
+            function changeblur()
+            {
+                document.body.style.background='red';
+            }
+
+            </script>
+
+<input type="text" name="name" onblur="changeblur()">
+
+
+
+
+        
+        <script>
+            document.writeln("<h1>form event</h1>");
+
+            document.writeln("<h1>onchange event</h1>");
+            function changeonchange()
+            {
+                document.body.style.background='green';
+            }
+
+            </script>
+
+        <input type="text" name="name" onchange="changeonchange()">
+
+
+
+
+        <script>
+            document.writeln("<h1>form event</h1>");
+
+            document.writeln("<h1>onsubmit event</h1>");
+
+            function changesubmit()
+            {
+                document.body.style.background='pink';
+            }
+
+            </script>
+
+
+            <form onsubmit="changesubmit()">
+
+          name:     <input type="text" name="user">
+               <br>
+               
+          email:     <input type="text" name="user">
+          <br>
+
+                <input type="submit" value="submit" >
+
+
+    </form>
+
+        
+
+
+
+
+
+       
+
+
+
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pop up messages</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>alert()</h1>");
+            function message1()
+            {
+            
+            alert("alert with only ok message!");
+            }
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="alert()" onclick="message1()">
+
+
+
+
+        <script>
+            document.writeln("<h1>confirm()</h1>");
+            function message2()
+            {
+            
+           var t=confirm("confirm is  with only ok and cancel message!");
+           if(t==true)
+           {
+               alert("your message is summited!");
+           }
+           else{
+               alert("your message is not submitted!");
+           }
+            }
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="confirmm it" onclick="message2()">
+
+
+
+
+        <script>
+            document.writeln("<h1>prompt()</h1>");
+            function message3()
+            {
+            
+        var t2=prompt("what is your age!");
+        alert("your age is:"+t2);
+            }
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="prompt it" onclick="message3()">
+
+
+
+
+
+        <script>
+            document.writeln("<h1>open()</h1>");
+            function message4()
+            {
+            
+       open("browser objects alert.html");
+            }
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="open it" onclick="message4()">
+        
+
+
+        <script>
+            document.writeln("<h1>setTimeout()</h1>");
+          setTimeout(
+              function message5()
+              {
+                  alert("this will take some time to open!");
+              },3000
+          );
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="setTimeout it" onclick="message5()">
+        
+
+
+
+        <script>
+            document.writeln("<h1>close()</h1>");
+            function message6()
+            {
+            
+       close();
+            }
+            document.writeln("<br>");
+        </script>
+
+        <input type="button" value="close it" onclick="message6()">
+        
+
+    </body>
+</html>

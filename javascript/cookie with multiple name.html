@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cookies with multiple name</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>cokkies with multiple name</h1>");
+        
+            function setcokkies()
+            {
+          document.cookie = "name=" +document.getElementById('name').value;
+          document.cookie = "email=" +document.getElementById('email').value;
+            }
+
+            function getcokkies()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("cookei  not found!");
+                }
+            }
+            
+            </script>
+
+            name:
+            <input type="text" id="name">
+            <br>
+            email:
+            <input type="text" id="email">
+            <br>
+
+            <input type="button" value="set" onclick="setcokkies()">
+            <br>
+            <br>
+            <input type="button" value="get" onclick="getcokkies()">
+            <br>
+
+
+
+
+
+
+
+
+    </body>
+</html>

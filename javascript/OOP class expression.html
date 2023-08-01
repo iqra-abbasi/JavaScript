@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js classes</title>
+    </head>
+    <body>
+        <script>
+            document.writeln("<h1>js classes</h1>");
+            document.writeln("<h1>second method class expression</h1>");
+            document.writeln("<h1>i) unnamed class</h1>");
+
+        var obj=class
+            {
+            constructor(name,id)
+                {
+                    this.name=name;
+                    this.id=id;
+                }
+            };
+
+                document.writeln(obj.name);
+                document.writeln("<br>");
+                document.writeln("<br>");
+                document.writeln(obj.id);
+
+
+            </script>
+
+
+
+
+<h1>ii)re-declared class</h1>
+<script>
+    var emp =class{
+        constructor(id,name)
+        {
+            this.id=id;
+            this.name=name;
+
+        }
+
+        details()
+        {
+            document.writeln(this.name+" "+this.id);
+        }
+    }
+    var ob1=new emp(1,"iqra");
+    ob1.details();
+    document.write("<br>");
+    var ob2=new emp(2,"abbasi");
+    ob2.details();
+
+</script>
+
+
+
+<h1>iii) named class</h1>
+<script>
+    var em=class Employ
+    {
+        constructor(id,name)
+        {
+            this.id=id;
+            this.name=name;
+
+        }
+
+    };
+    document.writeln(Employ.id);
+    document.writeln(Employ.name);
+   
+  
+</script>
+    </body>
+</html>
